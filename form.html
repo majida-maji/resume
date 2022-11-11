@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Form</title>
+	</head>
+
+
+	<body bgcolor="pink">
+		<h1 align="center">
+			Form
+		</h1>
+		<table align="center">
+			<form method="post">
+
+				<tr>
+					<td>
+						Name
+					</td>
+					<td>
+						<input type="text" name="name" required="">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Address
+					</td>
+					<td>
+						<textarea name="Address" required=""></textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Gender
+					</td>
+					<td>
+						<input type="radio" name="gen" value="male" required="">Male
+						<input type="radio" name="gen" value="female" required="">Female
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Phone
+					</td>
+					<td>
+						<input type="text" name="Phone" required pattern="[6789][0-9]{9}" required="">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Email
+					</td>
+					<td>
+						<input type="text" name="mail"  required="" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Date of Birth
+					</td>
+					<td>
+						<input type="text" name="dob" required="">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						District
+					</td>
+					<td>
+						<select name="dis" required="">
+						<option>
+							kannur
+						</option>
+						<option>
+							kozhikode
+						</option>
+						<option>
+							wayanad
+						</option>
+					</select>
+					</td>
+					
+				</tr>
+
+				<tr>
+					<td>
+						Qualification
+					</td>
+					<td>
+						SSLC<input type="checkbox" name="sslc" value="on">
+						Plus Two<input type="checkbox" name="plustwo" value="on">
+						Degree<input type="checkbox" name="degree" value="on">
+						PG<input type="checkbox" name="pg" value="on">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						Password
+					</td>
+					<td>
+						<input type="text" name="pass" required="">
+					</td>
+				</tr>
+
+				<tr>
+					
+					<td align="center">
+						<input type="submit" class="btn btn-primary" value="Register">
+					</td>
+				</tr>
+
+			</form>
+		</table>
+		
+	</body>
+</html>
